@@ -1,0 +1,122 @@
+\hypertarget{file_8cpp}{}\doxysection{P1/file.cpp File Reference}
+\label{file_8cpp}\index{P1/file.cpp@{P1/file.cpp}}
+{\ttfamily \#include \char`\"{}header.\+hpp\char`\"{}}\newline
+{\ttfamily \#include $<$bits/stdc++.\+h$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+set$<$ long $>$ \mbox{\hyperlink{file_8cpp_aa1a26a76674d57ada7e61e93a7afdd46}{y\+\_\+set}} (vector$<$ \mbox{\hyperlink{structrectangle}{rectangle}} $>$ rec)
+\item 
+set$<$ \mbox{\hyperlink{structinterval}{interval}} $>$ \mbox{\hyperlink{file_8cpp_a1c9c83e0ca18af4a1e9fd0eabca37a39}{partition}} (set$<$ long $>$ set\+\_\+\+Ycoord)
+\item 
+set$<$ \mbox{\hyperlink{structinterval}{interval}} $>$ \mbox{\hyperlink{file_8cpp_aa650fde2c5607a8c90cf6a1e2b02b776}{set\+\_\+union\+\_\+interval}} (set$<$ \mbox{\hyperlink{structinterval}{interval}} $>$ a, set$<$ \mbox{\hyperlink{structinterval}{interval}} $>$ b)
+\item 
+set$<$ long long $>$ \mbox{\hyperlink{file_8cpp_a1da48c97121accdcdfbb143f5cda8e73}{set\+\_\+union\+\_\+coord}} (set$<$ long long $>$ a, set$<$ long long $>$ b)
+\item 
+set$<$ \mbox{\hyperlink{structinterval}{interval}} $>$ \mbox{\hyperlink{file_8cpp_a2b7bb70f3615e47a76e8a8bb5f2092c4}{intersect}} (set$<$ \mbox{\hyperlink{structinterval}{interval}} $>$ a, set$<$ \mbox{\hyperlink{structinterval}{interval}} $>$ b)
+\item 
+set$<$ \mbox{\hyperlink{structinterval}{interval}} $>$ \mbox{\hyperlink{file_8cpp_ae6803d1579c394f807d8f64d27bb5b58}{set\+\_\+sub}} (set$<$ \mbox{\hyperlink{structinterval}{interval}} $>$ a, set$<$ \mbox{\hyperlink{structinterval}{interval}} $>$ b)
+\item 
+int \mbox{\hyperlink{file_8cpp_adc34c7dc07dbdb7acdee31f08a114f91}{search\+\_\+intv}} (vector$<$ \mbox{\hyperlink{structinterval}{interval}} $>$ vec, \mbox{\hyperlink{structinterval}{interval}} subset)
+\item 
+long long \mbox{\hyperlink{file_8cpp_a5b69cab20998a5410230a915f66ca250}{bn\+\_\+search\+\_\+exact}} (vector$<$ \mbox{\hyperlink{structstripe}{stripe}} $>$S, \mbox{\hyperlink{structinterval}{interval}} subset)
+\item 
+bool \mbox{\hyperlink{file_8cpp_a2bb8a668efa6d30c336892f91eec485a}{cmp}} (\mbox{\hyperlink{structstripe}{stripe}} a, \mbox{\hyperlink{structstripe}{stripe}} b)
+\item 
+vector$<$ \mbox{\hyperlink{structstripe}{stripe}} $>$ \mbox{\hyperlink{file_8cpp_a77469b8d3f82b981a096af55b11ead1f}{copy}} (vector$<$ \mbox{\hyperlink{structstripe}{stripe}} $>$S, set$<$ long long $>$ P, \mbox{\hyperlink{structinterval}{interval}} x\+\_\+int)
+\item 
+void \mbox{\hyperlink{file_8cpp_a8d138e8996f0213ebb2ada373896bfa2}{blacken}} (vector$<$ \mbox{\hyperlink{structstripe}{stripe}} $>$ \&S, set$<$ \mbox{\hyperlink{structinterval}{interval}} $>$J)
+\item 
+vector$<$ \mbox{\hyperlink{structstripe}{stripe}} $>$ \mbox{\hyperlink{file_8cpp_a55caee2f3dce4e128e59222b3d891de3}{concat}} (vector$<$ \mbox{\hyperlink{structstripe}{stripe}} $>$S1, vector$<$ \mbox{\hyperlink{structstripe}{stripe}} $>$S2, set$<$ long long $>$ P, \mbox{\hyperlink{structinterval}{interval}} x\+\_\+int)
+\item 
+void \mbox{\hyperlink{file_8cpp_a5f56751b56acf3836bbc210b94fcc6fc}{STRIPES}} (set$<$ \mbox{\hyperlink{structedge}{edge}} $>$ V, \mbox{\hyperlink{structinterval}{interval}} x\+\_\+ext, set$<$ \mbox{\hyperlink{structinterval}{interval}} $>$ \&L, set$<$ \mbox{\hyperlink{structinterval}{interval}} $>$ \&R, set$<$ long long $>$ \&P, vector$<$ \mbox{\hyperlink{structstripe}{stripe}} $>$ \&S)
+\item 
+int \mbox{\hyperlink{file_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{file_8cpp_a8d138e8996f0213ebb2ada373896bfa2}\label{file_8cpp_a8d138e8996f0213ebb2ada373896bfa2}} 
+\index{file.cpp@{file.cpp}!blacken@{blacken}}
+\index{blacken@{blacken}!file.cpp@{file.cpp}}
+\doxysubsubsection{\texorpdfstring{blacken()}{blacken()}}
+{\footnotesize\ttfamily void blacken (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{structstripe}{stripe}} $>$ \&}]{S,  }\item[{set$<$ \mbox{\hyperlink{structinterval}{interval}} $>$}]{J }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{file_8cpp_a5b69cab20998a5410230a915f66ca250}\label{file_8cpp_a5b69cab20998a5410230a915f66ca250}} 
+\index{file.cpp@{file.cpp}!bn\_search\_exact@{bn\_search\_exact}}
+\index{bn\_search\_exact@{bn\_search\_exact}!file.cpp@{file.cpp}}
+\doxysubsubsection{\texorpdfstring{bn\_search\_exact()}{bn\_search\_exact()}}
+{\footnotesize\ttfamily long long bn\+\_\+search\+\_\+exact (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{structstripe}{stripe}} $>$}]{S,  }\item[{\mbox{\hyperlink{structinterval}{interval}}}]{subset }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{file_8cpp_a2bb8a668efa6d30c336892f91eec485a}\label{file_8cpp_a2bb8a668efa6d30c336892f91eec485a}} 
+\index{file.cpp@{file.cpp}!cmp@{cmp}}
+\index{cmp@{cmp}!file.cpp@{file.cpp}}
+\doxysubsubsection{\texorpdfstring{cmp()}{cmp()}}
+{\footnotesize\ttfamily bool cmp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structstripe}{stripe}}}]{a,  }\item[{\mbox{\hyperlink{structstripe}{stripe}}}]{b }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{file_8cpp_a55caee2f3dce4e128e59222b3d891de3}\label{file_8cpp_a55caee2f3dce4e128e59222b3d891de3}} 
+\index{file.cpp@{file.cpp}!concat@{concat}}
+\index{concat@{concat}!file.cpp@{file.cpp}}
+\doxysubsubsection{\texorpdfstring{concat()}{concat()}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{structstripe}{stripe}}$>$ concat (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{structstripe}{stripe}} $>$}]{S1,  }\item[{vector$<$ \mbox{\hyperlink{structstripe}{stripe}} $>$}]{S2,  }\item[{set$<$ long long $>$}]{P,  }\item[{\mbox{\hyperlink{structinterval}{interval}}}]{x\+\_\+int }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{file_8cpp_a77469b8d3f82b981a096af55b11ead1f}\label{file_8cpp_a77469b8d3f82b981a096af55b11ead1f}} 
+\index{file.cpp@{file.cpp}!copy@{copy}}
+\index{copy@{copy}!file.cpp@{file.cpp}}
+\doxysubsubsection{\texorpdfstring{copy()}{copy()}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{structstripe}{stripe}}$>$ copy (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{structstripe}{stripe}} $>$}]{S,  }\item[{set$<$ long long $>$}]{P,  }\item[{\mbox{\hyperlink{structinterval}{interval}}}]{x\+\_\+int }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{file_8cpp_a2b7bb70f3615e47a76e8a8bb5f2092c4}\label{file_8cpp_a2b7bb70f3615e47a76e8a8bb5f2092c4}} 
+\index{file.cpp@{file.cpp}!intersect@{intersect}}
+\index{intersect@{intersect}!file.cpp@{file.cpp}}
+\doxysubsubsection{\texorpdfstring{intersect()}{intersect()}}
+{\footnotesize\ttfamily set$<$\mbox{\hyperlink{structinterval}{interval}}$>$ intersect (\begin{DoxyParamCaption}\item[{set$<$ \mbox{\hyperlink{structinterval}{interval}} $>$}]{a,  }\item[{set$<$ \mbox{\hyperlink{structinterval}{interval}} $>$}]{b }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{file_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{file_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}} 
+\index{file.cpp@{file.cpp}!main@{main}}
+\index{main@{main}!file.cpp@{file.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{file_8cpp_a1c9c83e0ca18af4a1e9fd0eabca37a39}\label{file_8cpp_a1c9c83e0ca18af4a1e9fd0eabca37a39}} 
+\index{file.cpp@{file.cpp}!partition@{partition}}
+\index{partition@{partition}!file.cpp@{file.cpp}}
+\doxysubsubsection{\texorpdfstring{partition()}{partition()}}
+{\footnotesize\ttfamily set$<$\mbox{\hyperlink{structinterval}{interval}}$>$ partition (\begin{DoxyParamCaption}\item[{set$<$ long $>$}]{set\+\_\+\+Ycoord }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{file_8cpp_adc34c7dc07dbdb7acdee31f08a114f91}\label{file_8cpp_adc34c7dc07dbdb7acdee31f08a114f91}} 
+\index{file.cpp@{file.cpp}!search\_intv@{search\_intv}}
+\index{search\_intv@{search\_intv}!file.cpp@{file.cpp}}
+\doxysubsubsection{\texorpdfstring{search\_intv()}{search\_intv()}}
+{\footnotesize\ttfamily int search\+\_\+intv (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{structinterval}{interval}} $>$}]{vec,  }\item[{\mbox{\hyperlink{structinterval}{interval}}}]{subset }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{file_8cpp_ae6803d1579c394f807d8f64d27bb5b58}\label{file_8cpp_ae6803d1579c394f807d8f64d27bb5b58}} 
+\index{file.cpp@{file.cpp}!set\_sub@{set\_sub}}
+\index{set\_sub@{set\_sub}!file.cpp@{file.cpp}}
+\doxysubsubsection{\texorpdfstring{set\_sub()}{set\_sub()}}
+{\footnotesize\ttfamily set$<$\mbox{\hyperlink{structinterval}{interval}}$>$ set\+\_\+sub (\begin{DoxyParamCaption}\item[{set$<$ \mbox{\hyperlink{structinterval}{interval}} $>$}]{a,  }\item[{set$<$ \mbox{\hyperlink{structinterval}{interval}} $>$}]{b }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{file_8cpp_a1da48c97121accdcdfbb143f5cda8e73}\label{file_8cpp_a1da48c97121accdcdfbb143f5cda8e73}} 
+\index{file.cpp@{file.cpp}!set\_union\_coord@{set\_union\_coord}}
+\index{set\_union\_coord@{set\_union\_coord}!file.cpp@{file.cpp}}
+\doxysubsubsection{\texorpdfstring{set\_union\_coord()}{set\_union\_coord()}}
+{\footnotesize\ttfamily set$<$long long$>$ set\+\_\+union\+\_\+coord (\begin{DoxyParamCaption}\item[{set$<$ long long $>$}]{a,  }\item[{set$<$ long long $>$}]{b }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{file_8cpp_aa650fde2c5607a8c90cf6a1e2b02b776}\label{file_8cpp_aa650fde2c5607a8c90cf6a1e2b02b776}} 
+\index{file.cpp@{file.cpp}!set\_union\_interval@{set\_union\_interval}}
+\index{set\_union\_interval@{set\_union\_interval}!file.cpp@{file.cpp}}
+\doxysubsubsection{\texorpdfstring{set\_union\_interval()}{set\_union\_interval()}}
+{\footnotesize\ttfamily set$<$\mbox{\hyperlink{structinterval}{interval}}$>$ set\+\_\+union\+\_\+interval (\begin{DoxyParamCaption}\item[{set$<$ \mbox{\hyperlink{structinterval}{interval}} $>$}]{a,  }\item[{set$<$ \mbox{\hyperlink{structinterval}{interval}} $>$}]{b }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{file_8cpp_a5f56751b56acf3836bbc210b94fcc6fc}\label{file_8cpp_a5f56751b56acf3836bbc210b94fcc6fc}} 
+\index{file.cpp@{file.cpp}!STRIPES@{STRIPES}}
+\index{STRIPES@{STRIPES}!file.cpp@{file.cpp}}
+\doxysubsubsection{\texorpdfstring{STRIPES()}{STRIPES()}}
+{\footnotesize\ttfamily void STRIPES (\begin{DoxyParamCaption}\item[{set$<$ \mbox{\hyperlink{structedge}{edge}} $>$}]{V,  }\item[{\mbox{\hyperlink{structinterval}{interval}}}]{x\+\_\+ext,  }\item[{set$<$ \mbox{\hyperlink{structinterval}{interval}} $>$ \&}]{L,  }\item[{set$<$ \mbox{\hyperlink{structinterval}{interval}} $>$ \&}]{R,  }\item[{set$<$ long long $>$ \&}]{P,  }\item[{vector$<$ \mbox{\hyperlink{structstripe}{stripe}} $>$ \&}]{S }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{file_8cpp_aa1a26a76674d57ada7e61e93a7afdd46}\label{file_8cpp_aa1a26a76674d57ada7e61e93a7afdd46}} 
+\index{file.cpp@{file.cpp}!y\_set@{y\_set}}
+\index{y\_set@{y\_set}!file.cpp@{file.cpp}}
+\doxysubsubsection{\texorpdfstring{y\_set()}{y\_set()}}
+{\footnotesize\ttfamily set$<$long$>$ y\+\_\+set (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{structrectangle}{rectangle}} $>$}]{rec }\end{DoxyParamCaption})}
+
